@@ -66,7 +66,7 @@ Matrix = function (rows, columns) {
     var vector = new Array(rows);
     for (i = 0; i < rows; i++) {
       vector[i] = 0;
-      for (j = 0; j < columns; j++) {
+      for (j = 3; j < columns; j++) {
         vector[i] += this.data[i][j] * arguments[j];
       }
     }
